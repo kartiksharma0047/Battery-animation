@@ -1,0 +1,45 @@
+*{
+    padding:0%;
+    margin: 0%;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+#battery{
+    background-color: white;
+    border: 15px solid black;
+    width: 300px;
+    height: 120px;
+    margin: 20% 35%;
+    display: flex;
+    justify-content:left;
+}
+#block{
+    position: absolute;
+    height: 30px;
+    border: 15px solid black;
+    top:46%;
+    right: 38%;
+}
+#bar1{
+    background-color: black;
+    height: 104px;
+    margin: 8px 5px;
+    animation-name: bar1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-delay:2s;
+    animation-timing-function:linear;
+}
+@keyframes bar1{
+    0%{background-color: red;width: 0px;}
+    20%{background-color: orange; width: 58px;}
+    40%{background-color: yellow;width: 116px;}
+    60%{background-color: greenyellow;width: 174px;}
+    80%{background-color: lightgreen;width: 232px;}
+    to{background-color: rgb(0, 203, 0);width: 290px;}
+}
+
